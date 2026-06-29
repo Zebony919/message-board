@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <%= title %>
+
+    <br><br>
+
+    <% for (let i = 0; i < messages.length; i++) { %>
+        Text: <%= messages[i].text; %> <br>
+        User: <%= messages[i].user; %> <br>
+        Date: <%= messages[i].added; %> <br>
+        <br>
+    <% } %>
+
+    <a href="/new">Make a new Post!</a>
+  </body>
+</html>
